@@ -1,0 +1,110 @@
+/*PEN STYLES*/
+@mixin transition($dur, $prop: all, $style: ease) {
+	transition: $prop $dur $style;
+}
+body {
+	background: #f1f1f1;
+	margin-top: 2rem;
+	color: black;
+}
+
+.form {
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: auto;
+	max-width: 450px;
+	overflow: hidden;
+}
+
+	.form.header {
+		background: #54428E;
+		border-bottom: 4px solid (#54428E / 1.2);
+		color: #fff;
+		text-align: center;
+		overflow: hidden;
+
+		/*TRANSITION*/
+		@include transition(0.5s);
+	}
+
+	.form.header h1 {
+		line-height: 1em;
+	}
+
+	.form.body {
+		background: #fff;
+		/* height: 371px; */
+		padding: 20px 12px;
+		overflow: hidden;
+
+		/*TRANSITION*/
+		@include transition(0.2s);
+	}
+
+	.form.inputContainer {
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		position: relative;
+		margin-bottom: 5px;
+		overflow: hidden;
+		background: transparent;
+		color: black;
+	}
+
+
+		.form.inputContainer label, input, textarea {
+			box-sizing: border-box;
+			padding: 10px;
+			font-size: 14px;
+			line-height: 1em;
+			border: none;
+			font: inherit;
+		}
+
+		.form.inputContainer label {
+			display: inline-block;
+			font-size: .7em;
+			background: #ccc * 1.1;
+			color: rgba(0, 0, 0, 0.3);
+			color: black;
+			line-height: 1.75em;
+			border-right: 1px solid #ccc;
+
+			/*POSITION*/
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+		}
+
+		.form.inputContainer textarea, input {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.form.inputContainer textarea {
+			margin-bottom: -5px;
+		}
+
+		.form.inputContainer input {
+			padding-left: 50px;
+		}
+
+	.form.submitBtn {
+		background: #54428E;
+		color: #fff;
+		border: none;
+		border-radius: 3px;
+		font: inherit;
+		padding: 10px 18px;
+		margin-top: 10px;
+		float: right;
+		width: auto;
+
+		/*TRANSITION*/
+		@include transition(0.5s, background);
+	}
+
+	.form.submitBtn:hover {
+		background: green; /*#54428E * 1.4;*/
+	}
