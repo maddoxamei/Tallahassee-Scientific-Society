@@ -1,0 +1,27 @@
+Install Angular CLI via Cmd Prompt
+  npm install -g @angular/cli
+
+Create New Project
+  ng new tss
+
+
+Install JS packages
+  npm install jquery --save
+  npm install bootstrap --save
+
+
+Run Development Server
+  ng serve
+
+Build For Production
+  ng build --prod
+
+Generate Component
+  ng generate component xyz
+
+Add Dependancy
+  ng add _____
+  ng add @angular/material
+
+Run and Watch Tests????
+  ng test
