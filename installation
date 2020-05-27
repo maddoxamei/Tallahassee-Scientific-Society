@@ -25,3 +25,7 @@ Add Dependancy
 
 Run and Watch Tests????
   ng test
+
+Import Forms Module
+  import { FormsModule } from '@angular/forms'; inside app.module.ts (NgModel lives here)
+  Add FormsModule in the imports array
