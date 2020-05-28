@@ -1,0 +1,22 @@
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+.credits {
+  color: inherit;
+  font-size: smaller;
+  font-style: italic;
+}
+
+.credits a {
+  color: inherit;
+}
+
+.credits a:hover{
+  color: #9ccce6;
+}

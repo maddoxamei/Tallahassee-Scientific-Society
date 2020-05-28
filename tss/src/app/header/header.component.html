@@ -1,4 +1,5 @@
-<div class="wrapper">
+<div class="wrapper"  (mouseleave)="hoverend($event)">
+
   <section class="banner">
     <img class="img" src="../../favicon.ico" alt="">
     <div>
@@ -6,15 +7,18 @@
     </div>
     </section>
 
+    <div class="main-nav">
+      <nav  *ngFor="let element of navbar">
+        <div *ngIf="!getSubNav(element).length; else elseBlock">
+          <a routerLink="/{{element | lowercase}}" (mouseover)="hover($event, element)">{{element}}</a>
+        </div>
+        <ng-template #elseBlock>
+          <a (mouseover)="hover($event, element)">{{element}}</a>
+          <ul class="nav-dropdown" *ngFor="let sub of getSubNav(element)" [class.selected]="element === selected">
+            <li routerLink="/{{sub}}">{{sub}}</li>
+          </ul>
+        </ng-template>
+      </nav>
+    </div>
 
-  <div class="main-nav">
-    <nav>
-      <a routerLink="/about">About</a>
-      <a routerLink="/activities">Activities</a>
-      <a routerLink="/archives">Archives</a>
-      <a routerLink="/calendar">Calendar</a>
-      <a routerLink="/membership">Membership</a>
-      <a routerLink="/contribute">Contribute</a>
-    </nav>
-  </div>
 </div>

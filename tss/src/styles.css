@@ -1,11 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-
 :root {
   --primary: #ddd; /*b0e0e6*/
   --dark: #333;
   --light: #eee; /*#fff*/
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
+
+  --box-x-padding: 2rem;
+  --box-y-padding: 2rem;
+  }
+
+  @media (min-width: 40em) {
+    :root {
+      --box-y-padding: 4rem;
+    }
+  }
+  @media (min-width: 60em) {
+    :root {
+      --box-x-padding: 3rem;
+      --box-y-padding: 6rem;
+    }
+  }
 
 html {
   box-sizing: border-box;
@@ -29,4 +43,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Section */
+.section {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  padding: 3rem;
 }
