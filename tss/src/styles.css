@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary: #ddd; /*b0e0e6*/
+  --dark: #333;
+  --light: #eee; /*#fff*/
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: #ccc;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.horizontal-center {
+  margin: auto;
+}
+
+.vertical-center {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
