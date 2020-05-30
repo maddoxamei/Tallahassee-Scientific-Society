@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { activities } from '../../assets/ts/activities';
 
 @Component({
   selector: 'app-activities',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivitiesComponent implements OnInit {
 
+  titles: Array<string> = Object.keys(activities);
+  information = Object.values(activities);
+  activities = activities;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getStyle(title){
+    return {'background-color': 'rebeccapurple'}
   }
 
 }

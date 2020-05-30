@@ -53,3 +53,8 @@ body {
   grid-gap: 30px;
   padding: 3rem;
 }
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
