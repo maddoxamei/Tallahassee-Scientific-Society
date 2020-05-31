@@ -1,1 +1,1 @@
-ng deploy
+ng deploy --base-href=https://maddoxamei.github.io/Tallahassee-Scientific-Society/
