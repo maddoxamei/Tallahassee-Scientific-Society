@@ -1,1 +1,2 @@
-ng build --prod --output-path ../docs --base-href /Tallahassee-Scientific-Society/
+ng build --prod --base-href 'https://maddoxamei.github.io/Tallahassee-Scientific-Society/'
+ngh
