@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { TestComponent } from './test/test.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ActivitiesComponent } from './activities/activities.component';
     FooterComponent,
     HomepageComponent,
     CalendarComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [
     Title

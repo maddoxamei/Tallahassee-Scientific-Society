@@ -1,0 +1,53 @@
+
+nav {
+	  display: grid;
+	  grid-gap: 20px;
+	  padding: 0;
+	  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	  position: relative;
+}
+
+nav li {
+	display:inline-block;
+	list-style: none;
+  color: red;
+  box-shadow: var(--shadow);
+	background: var(--primary);
+}
+
+nav a {
+	display:block;
+	padding:0 10px;
+	color:white;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover {
+	background-color: #000000;
+}
+
+/* Hide Dropdowns by Default */
+nav ul {
+	display: none;
+	position: absolute;
+	top: 60px; /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+nav li:hover > ul {
+	display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }

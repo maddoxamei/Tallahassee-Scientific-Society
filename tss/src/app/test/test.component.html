@@ -1,0 +1,13 @@
+<div id="container">
+    <nav>
+      <ul >
+        <div *ngFor="let element of navbar">
+          <li><a routerLink="/{{element | lowercase}}">{{element}}</a></li>
+          <ul *ngFor="let sub of getSubNav(element)">
+              <li><a routerLink="/{{sub}}">{{sub}}</a></li>
+          </ul>
+        </div>
+
+      </ul>
+    </nav>
+</div>

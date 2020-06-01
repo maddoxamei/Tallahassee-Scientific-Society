@@ -6,19 +6,15 @@
       <h1 class="vertical-center"> Tallahassee Scientific Society </h1>
     </div>
     </section>
-
+    
     <div class="main-nav">
-      <nav  *ngFor="let element of navbar">
-        <div *ngIf="!getSubNav(element).length; else elseBlock">
-          <a routerLink="/{{element | lowercase}}" (mouseover)="hover($event, element)">{{element}}</a>
-        </div>
-        <ng-template #elseBlock>
-          <a (mouseover)="hover($event, element)">{{element}}</a>
-          <ul class="nav-dropdown" *ngFor="let sub of getSubNav(element)" [class.selected]="element === selected">
-            <li routerLink="/{{sub}}">{{sub}}</li>
-          </ul>
-        </ng-template>
-      </nav>
+        <nav *ngFor="let element of navbar">
+          <li>
+            <a routerLink="/{{element | lowercase}}">{{element}}</a>
+            <ul *ngFor="let sub of getSubNav(element)">
+                <li><a routerLink="/{{sub}}">{{sub}}</a></li>
+            </ul>
+          </li>
+        </nav>
     </div>
-
 </div>
