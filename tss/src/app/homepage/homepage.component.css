@@ -52,6 +52,7 @@ section
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow);
+  transition: all .2s ease-in-out;
   cursor: pointer;
 }
 
