@@ -18,7 +18,7 @@ export class ActivitiesComponent implements OnInit {
   }
 
   getStyle(title){
-    return {'background-color': 'rebeccapurple'}
+    return {'background-color': 'var(--violet)'}
   }
 
 }

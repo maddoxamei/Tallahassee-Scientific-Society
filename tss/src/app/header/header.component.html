@@ -6,15 +6,19 @@
       <h1 class="vertical-center"> Tallahassee Scientific Society </h1>
     </div>
     </section>
-    
+
     <div class="main-nav">
         <nav *ngFor="let element of navbar">
           <li>
-            <a routerLink="/{{element | lowercase}}">{{element}}</a>
-            <ul *ngFor="let sub of getSubNav(element)">
+            <a routerLink="/{{element | lowercase}}">{{element}}
+              <div *ngIf="getSubNav(element).length"> ▾</div>
+            </a>
+            <ul>
+              <div *ngFor="let sub of getSubNav(element)">
                 <li><a routerLink="/{{sub}}">{{sub}}</a></li>
+              </div>
             </ul>
-          </li>
+          <li>
         </nav>
     </div>
 </div>

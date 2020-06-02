@@ -18,7 +18,7 @@
   padding: 1rem;
 }
 
-.main-nav {
+.main-nav{
   display: grid;
   grid-gap: 20px;
   padding: 0;
@@ -37,6 +37,7 @@
   text-transform: uppercase;
   font-size: 1.1rem;
   box-shadow: var(--shadow);
+  position: relative;
 }
 
 .main-nav a:hover {
@@ -45,51 +46,37 @@
 }
 
 .main-nav li {
-  list-style: none;
+  position: relative;
 }
 
-.main-nav li:hover{
-  background: red;
+.main-nav li > ul {
+  width: 100%;
 }
 
-.main-nav li ul{
+.main-nav li ul {
   display: none;
+  list-style: none;
+  position: absolute;
+}
+
+.main-nav ul li{
+  display:list-item;
+  position: relative;
 }
 
 .main-nav li:hover > ul{
-
   display: inherit;
-  list-style: none;
 }
 
-.main-nav ul:hover{
-  background: green;
+/* Change this in order to change the Dropdown symbol */
+.main-nav a div{
+  display: inline;
+  padding-left: 4px;
 }
+/*
 
 a:not(:only-child):after {
   padding-left: 4px;
   content: ' ▾';
 }
-
-.nav-dropdown li { /*nav ul*/
-    background: var(--primary);
-    position: relative;
-    text-decoration: none;
-    padding: 0.8rem;
-    text-align: center;
-    color: var(--dark);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    box-shadow: var(--shadow);
-    list-style: none;
-}
-
-.nav-dropdown li:hover {
-  background: var(--dark);
-  color: var(--primary);
-}
-
-.nav-dropdown {
-  float: none;
-  display: block;
-}
+*/

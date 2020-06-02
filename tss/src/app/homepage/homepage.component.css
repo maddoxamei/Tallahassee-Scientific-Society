@@ -5,6 +5,26 @@
 .img {
   max-width: 100%;
   height: auto;
+	border-radius:3px;
+}
+
+section
+
+.margin {
+  margin: 2em;
+}
+
+.about {
+  background-color: var(--light);
+}
+.about h1, h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.about p{
+  text-indent: 5%;
+  text-align: justify;
 }
 
 .btn {
@@ -16,7 +36,7 @@
 }
 
 .btn:hover {
-  background: var(--light);
+  background: var(--violet);
   color: var(--dark);
 }
 
@@ -32,4 +52,9 @@
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.1);
 }
