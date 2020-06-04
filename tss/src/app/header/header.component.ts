@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { nav } from '../../assets/ts/nav-menu';
+import { nav } from "../../assets/ts";
 
 @Component({
   selector: 'app-header',

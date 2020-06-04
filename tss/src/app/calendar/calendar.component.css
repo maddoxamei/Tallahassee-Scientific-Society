@@ -1,3 +1,14 @@
 .two-column {
+  display: grid;
+  grid-gap: 30px;
+  padding: 3rem;
   grid-template-columns: repeat(2, 1fr);
+}
+
+iframe {
+  border: 1em solid var(--dark);
+  width: 800px;
+  height: 600px;
+  frameborder: 0;
+  scrolling: "no";
 }

@@ -9,6 +9,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BoardOfDirectorsComponent } from './board-of-directors/board-of-directors.component';
+import { DocumentationComponent } from './documentation/documentation.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { MissionComponent } from './mission/mission.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     HomepageComponent,
     CalendarComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    BoardOfDirectorsComponent,
+    DocumentationComponent,
+    NewsletterComponent,
+    MissionComponent
   ],
   imports: [
     BrowserModule,

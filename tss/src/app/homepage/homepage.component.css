@@ -1,3 +1,10 @@
+/* Section */
+.section {
+  display: grid;
+  grid-gap: 30px;
+  padding: 3rem;
+}
+
 .two-column {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -7,8 +14,6 @@
   height: auto;
 	border-radius:3px;
 }
-
-section
 
 .margin {
   margin: 2em;
@@ -38,24 +43,4 @@ section
 .btn:hover {
   background: var(--violet);
   color: var(--dark);
-}
-
-/* Boxes */
-.boxes {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.box {
-  background: var(--primary);
-  text-align: center;
-  padding: 1.5rem 2rem;
-  box-shadow: var(--shadow);
-  transition: all .2s ease-in-out;
-  cursor: pointer;
-}
-
-.box:hover {
-  transform: scale(1.1);
 }

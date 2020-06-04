@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
 :root {
   --primary: #ddd; /*b0e0e6*/
   --dark: #333;
@@ -46,16 +48,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* Section */
-.section {
+section {
+  margin-bottom: 1%;
   background: var(--primary);
   box-shadow: var(--shadow);
-  display: grid;
-  grid-gap: 30px;
-  padding: 3rem;
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 20px;
 }

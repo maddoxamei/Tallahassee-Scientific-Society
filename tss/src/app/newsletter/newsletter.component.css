@@ -1,0 +1,12 @@
+.doc {
+    width: 100%;
+    height: 1000px;
+}
+
+iframe {
+  border: none;
+}
+
+.section {
+  padding: 3rem;
+}
