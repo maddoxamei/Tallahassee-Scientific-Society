@@ -16,6 +16,8 @@
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
+	  background: none;
+	  box-shadow: none;
   }
   section::after {
     content: '';
